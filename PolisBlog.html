@@ -109,10 +109,11 @@
 
  			 <div class = "posts">
    				 <div class="thumbnail">
-    				  <img src="" alt="...">
+                      <h6>Blog Post 1</h6>
+
+    				  <img src="http://www.hdwallpaperscool.com/wp-content/uploads/2015/01/ancient-ruins-in-greece-wide-high-definition-wallpaper-for-desktop-background-free.jpg" alt="...">
      			 	  <div class="caption">
-       					 <h3>Blog Post 1</h3>
-       					 <p>This is the content for Post One</p>
+       					 <p>Holy FUCK!</p>
       				  </div>
     			</div>
  		 </div>
@@ -156,27 +157,30 @@
   </div>
 </div>
 
- <!--************************************************************************
-   								Facebook Shit 
-    ****************************************************************************-->
     
 
  <!--************************************************************************
    								 Commentbox starts here
     ****************************************************************************-->
-       <div id="commentbox" ng-app>
+       <div id= "commentbox" ng-app>
             <form ng-controller="FrmController">
                 <form ng-controller="FrmController">
-                    <textarea ng-model="txtcomment" placeholder="Share your thoughts" style="width:550px"></textarea>
+                 <div class = "fluid-container" id = "commentwrapper">
+                  <section id = "commentboxleft">
+                    <h3>Leave us some feedback!</h3>
+                    <textarea ng-model="txtcomment" placeholder="Share your thoughts" ></textarea>
                     <button ng-click="btn_add();" style="margin-top:10px;">Post Comment</button>
-
-                    <h4>Comments</h4>
+                  </section>
+                  <section id = "commentboxright">
+                    <h3>Comments</h3>
                     <ul>
-                        <li ng-repeat="comnt in comment"> {{ comnt }} <a  style="float: right;" href="" ng-click="remItem($index)">x</a></li>
+                        <li ng-repeat="comnt in comment"> {{ comnt }} <a  href="" ng-click="remItem($index)">x</a></li>
                     </ul>
+                  </section>
+                 </div>
+               
                 </form> 
              </form> 
-
        	</div>
 
         <script type="text/javascript">
@@ -196,8 +200,10 @@
         </script>
         
          <!--************************************************************************
-
+										Footer
 	    ****************************************************************************-->
+        <footer>
+        </footer>
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
