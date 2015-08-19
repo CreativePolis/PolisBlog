@@ -12,8 +12,8 @@
 <link href="http://fonts.googleapis.com/css?family=Josefin+Sans:400,600,400italic|Rokkitt:400,700" rel="stylesheet" type="text/css">
 <!-- Bootstrap -->
 <link href="css/bootstrap.css" rel="stylesheet">
-<!-- Personal CSS -->
-<link href="../../../Coding Practice/Polis Again/Untitled-1.css" rel="stylesheet" type="text/css">
+<!-- Polis CSS -->
+<link href="file:///Macintosh%20HD/Users/Nickbertha/Desktop/Polis/Polis%20Blog%20Final/PolisBlog/PolisBlog.css" rel="stylesheet" type="text/css">
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,67 +24,46 @@
 </head>
 <body>
 <nav class="navbar navbar-default">
-  <div class="container-fluid"> 
+  <div class="container-fluid" id = "navbartop"> 
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-      <a class="navbar-brand" href="#">Brand</a></div>
+      <a class="navbar-brand" id = "logo" href="#">Polis</a></div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="defaultNavbar1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link<span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
+        <li><a href="#">Blog</a></li>
       </ul>
     </div>
     <!-- /.navbar-collapse --> 
   </div>
   <!-- /.container-fluid --> 
-</nav>
+  <div class="container-fluid" id = "navfooter"> 
+</div>
+	</nav>
+   
+
   						  <!-- /Image at Top --> 
 
 <div class="jumbotron" id = "topbanner">
   <div class="container">
-  <h3>Welcome to the polis blog, add message here </h3>
+  <h4>Welcome to the polis blog, add message here </h4>
   </div>
 </div>
 
 				  				  		<!--Main content--> 
-                                  
-<div class = "container-fluid">
+
+<div class = "container-fluid" id = "separator"></div>  
+                                      
+<div class = "container-fluid" id = "blogheader">
+		<h1>This Month's Blog Post </h1>
+</div>           
+<div class = "container-fluid" id = "mainwrapper">
     					  			  <!--Current Blog Post --> 
 
     	<section id = "blogpost">
-		<h1><!-- Blog title -->Companies That Inspire Us: Feastly  </h1>
-        <h3><!-- Tagline -->Post #5 | April 21st 2015</h3>
+		<h2><!-- Blog title -->Companies That Inspire Us: Feastly  </h2>
+        <h3><!-- Tagline -->Post #5 | <small>April 21st 2015</small></h3>
         <iframe id="bannerImage"> <!-- Blog Image --></iframe>
         <!-- Blog Content -->
       <p>Discovering Feastly was a great feeling because we viewed it as a proof of our concept that doesn’t encroach on our vision. What Feastly does is simple: it allows users to discover pop-up restaurants and rising chefs around them. Like Polis, it combines two user groups, those seeking a unique culinary experience and those seeking to provide it.  </p>
@@ -103,11 +82,12 @@
 
   	<div id = "sidebar">  
     	<p> sidebar </p>
+        <section class = "allposts">
             					<!--Post 1--> 
 
  			 <div class = "posts">
    				 <div class="thumbnail">
-    				  <img src="../../../Coding Practice/Polis Again/..." alt="...">
+    				  <img src="" alt="...">
      			 	  <div class="caption">
        					 <h3>Blog Post 1</h3>
        					 <p>This is the content for Post One</p>
@@ -124,7 +104,33 @@
        					 <p>This is the content for Post One</p>
       				  </div>
     			</div>
- 		 </div>
+ 			 </div>
+         
+         						<!--Post 3--> 
+
+ 			 <div class = "posts">
+   				 <div class="thumbnail">
+    				  <img src="../../../Coding Practice/Polis Again/..." alt="...">
+     			 	  <div class="caption">
+       					 <h3>Blog Post 1</h3>
+       					 <p>This is the content for Post One</p>
+      				  </div>
+    			</div>
+             </div>
+
+                			<!--Post 4--> 
+	
+                 <div class = "posts">
+                     <div class="thumbnail">
+                          <img src="../../../Coding Practice/Polis Again/..." alt="...">
+                          <div class="caption">
+                             <h3>Blog Post 1</h3>
+                             <p>This is the content for Post One</p>
+                          </div>
+                    </div>
+                </div>
+
+         </section>
   </div>
 </div>
 

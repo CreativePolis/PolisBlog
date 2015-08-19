@@ -1,15 +1,137 @@
 @charset "UTF-8";
 /* CSS Document */
 
+					/*/////////////////////////////General Shit///////////////////////////////*/
+
+
+body {background-color: #f5f9fa;
+}
+
+/* Colors
+White: #f5f9fa
+Black: #323c46
+Orange: #f67d00
+Blue: #16ade9
+  */
+					/*/////////////////////////////Text///////////////////////////////*/
+
+
+h1 {
+	color: #f5f9fa;
+	margin-left: 5%; 
+
+}
+
+
+h4 {
+	color: #f5f9fa;
+	margin-left: 5%; 
+
+}
+
+
+#blogpost h2 {
+	color: #323c46;
+	margin-left: 20px; 
+	margin-right: 20px;
+
+
+}
+
+#blogpost h3 {
+	color: #f67d00;
+	margin-left: 20px;
+}
+
+
+#blogpost p {
+	color: #323c46;
+	margin-left: 20px;
+	margin-right: 20px;
+
+	}
+
+					/*/////////////////////////////NavBar///////////////////////////////*/
+
+#navbartop {
+	background-color: #323c46; 
+	z-index: 2;
+}
+
+#logo {
+	color: #f8f9fa; 
+	font-family: gearus serif; 
+	margin-left: 40px;
+	font-size: 30px;
+}
+
+#navfooter {
+	background-color: #f67d00; 
+	z-index: 1000; 
+	float: left;
+	width: 100%;
+	z-index: 1;
+
+}
+
+#defaultNavbar1 ul li  {
+	
+	margin-right: 150px; 
+}
+
+#defaultNavbar1 ul li :hover{
+	background-color: #f67d00;
+	color: #323c46; 
+
+}
+
+#defaultNavbar1 ul li a {
+	
+	color: #f8f9fa; 
+}
+
+#defaultNavbar1 ul li a :hover{
+	
+	color: #323c46; 
+	font-weight: bold;
+}
+
+
+
+					/*/////////////////////////////Content///////////////////////////////*/
+
+
+#separator { 
+background-color: #323c46; 
+position: relative; 
+	bottom: 60px;
+	height: 1px;
+}
+
+
+#blogheader { 
+background-color: #16ade9; 
+position: relative; 
+	bottom: 60px;
+	height: 70px;
+}
+
+#mainwrapper {
+	position: relative; 
+	bottom: 20px;
+}
+
 #blogpost {
 	width: 55%;
 	margin-left: 5%; 
 	float: left;
 	padding: 0px;
-	margin-top: 0px;
-		background-color: #e9eaed;
-			margin-top: 20px;
-
+	background-color: #e9eaed;
+	margin-top: 20px;
+	-webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.37);
+	-moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.37);
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.37);
+	border-radius: 5px;
 
 	}
 	
@@ -18,38 +140,52 @@
 	margin-right: 5%; 
 	margin-top: 20px;
 	padding: 5px;
-	border: 5px;
 	float: right;
 	overflow: auto;
 	height: 80%;
 	background-color: #e9eaed;
+	-webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.37);
+	-moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.37);
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.37);
+	border-radius: 5px;
+
+}
+
+
+.allposts {
+	margin: auto;
+	padding: auto; 
+	overflow: auto;
+	diplay: inline;
 }
 
 .posts {
-	width: 40%;
-	margin: 5%; 
+	width: 45%;
+	margin: 2.5%; 
+	padding: 2.5%;
 	float: left;
 	overflow: auto;
 	diplay: inline;
 }
 
 #bannerImage {
-	padding-left: 5%;	
-	margin: auto;
-	width: 90%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	width: 95%;
 	background-image: url("http://blog.controlgroup.com/wp-content/uploads/2015/07/Feastly.png");
-	background-size: fill;
+	background-size: 100%;
+	border: 2px solid #323c46;
+	border-radius: 2px;
 
 }
 
 #topbanner {
 	background-image: url(Images/152403526.jpg);
 	background-image: contain;
-	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
-
-
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
+	height: 200px; 
+	position: relative; 
+	bottom: 30px;
+	z-index: 0;
 }
 
-h3 {
-	color: white;
-}
